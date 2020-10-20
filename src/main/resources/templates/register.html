@@ -1,0 +1,23 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	</head>
+	<body>
+		<form action="/register" method="POST">
+		<label for="name">Name</label>
+		<input type="text" th:field="*{name}">
+		
+		<label for="email">Email</label>
+		<input type="email" th:field="*{email}">
+		
+		<label for="password">Password</label>
+		<input type="password" th:field="*{password}">
+		
+		<label for="password">Confirm Password</label>
+		<input type="password" th:field="*{rpt_password}">
+		
+		<input type="submit" class="btn btn-primary" value="Register">
+		</form>
+	</body>
+</html>
